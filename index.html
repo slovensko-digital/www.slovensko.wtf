@@ -40,18 +40,12 @@
             player = new YT.Player('player', {
               height: '100%',
               width: '100%',
-              videoId: '0Bmhjf0rKe8',
-              playerVars: { controls: 0, showinfo: 0, rel: 0 },
+              videoId: '3nWRL3Pywlo',
+              playerVars: { controls: 0, showinfo: 0, rel: 0, autoplay: 1 },
               events: {
-                'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
               }
             });
-        }
-
-        // autoplay video
-        function onPlayerReady(event) {
-            event.target.playVideo();
         }
 
         // when video ends
